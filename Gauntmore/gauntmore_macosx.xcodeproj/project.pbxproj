@@ -1,0 +1,895 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04059FEA1872027500BA6557 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A57D861872012D0068B1E5 /* SDL2.framework */; };
+		04059FEB1872027B00BA6557 /* liboxygine_macosx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04059FE41872026200BA6557 /* liboxygine_macosx.a */; };
+		04059FED187202A200BA6557 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04059FEC187202A200BA6557 /* libz.dylib */; };
+		04059FEF187202AC00BA6557 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04059FEE187202AC00BA6557 /* OpenGL.framework */; };
+		0405A00018720D2200BA6557 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04059FF01872031A00BA6557 /* libjpeg.a */; };
+		0405A00118720D2200BA6557 /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04059FF11872031A00BA6557 /* libpng.a */; };
+		049B57321871FBE900EF3C66 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049B57311871FBE900EF3C66 /* Cocoa.framework */; };
+		049B574A1871FBE900EF3C66 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049B57491871FBE900EF3C66 /* Images.xcassets */; };
+		485AA5F31A9FF07300ED2895 /* NodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 485AA5F11A9FF07300ED2895 /* NodeArray.cpp */; };
+		530A07F11AAC0ECC0074D3C7 /* Weapon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 530A07ED1AAC0ECC0074D3C7 /* Weapon.cpp */; };
+		530A07F21AAC0ECC0074D3C7 /* WeaponCount.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 530A07EF1AAC0ECC0074D3C7 /* WeaponCount.cpp */; };
+		5328789D1A99A6EB00228299 /* base64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5328787C1A99A6EB00228299 /* base64.cpp */; };
+		5328789E1A99A6EB00228299 /* tinyxml2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5328787E1A99A6EB00228299 /* tinyxml2.cpp */; };
+		5328789F1A99A6EB00228299 /* TmxEllipse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 532878811A99A6EB00228299 /* TmxEllipse.cpp */; };
+		532878A01A99A6EB00228299 /* TmxImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 532878831A99A6EB00228299 /* TmxImage.cpp */; };
+		532878A11A99A6EB00228299 /* TmxImageLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 532878851A99A6EB00228299 /* TmxImageLayer.cpp */; };
+		532878A21A99A6EB00228299 /* TmxLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 532878871A99A6EB00228299 /* TmxLayer.cpp */; };
+		532878A31A99A6EB00228299 /* TmxMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 532878891A99A6EB00228299 /* TmxMap.cpp */; };
+		532878A41A99A6EB00228299 /* TmxObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5328788C1A99A6EB00228299 /* TmxObject.cpp */; };
+		532878A51A99A6EB00228299 /* TmxObjectGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5328788E1A99A6EB00228299 /* TmxObjectGroup.cpp */; };
+		532878A61A99A6EB00228299 /* TmxPolygon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 532878911A99A6EB00228299 /* TmxPolygon.cpp */; };
+		532878A71A99A6EB00228299 /* TmxPolyline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 532878931A99A6EB00228299 /* TmxPolyline.cpp */; };
+		532878A81A99A6EB00228299 /* TmxPropertySet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 532878951A99A6EB00228299 /* TmxPropertySet.cpp */; };
+		532878A91A99A6EB00228299 /* TmxTile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 532878971A99A6EB00228299 /* TmxTile.cpp */; };
+		532878AA1A99A6EB00228299 /* TmxTileset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 532878991A99A6EB00228299 /* TmxTileset.cpp */; };
+		532878AB1A99A6EB00228299 /* TmxUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5328789B1A99A6EB00228299 /* TmxUtil.cpp */; };
+		532878BA1A9A6AA700228299 /* Slime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 532878B81A9A6AA700228299 /* Slime.cpp */; };
+		534097AD1A896C0A000434F6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5340977F1A896C0A000434F6 /* main.cpp */; };
+		534097AE1A896C0A000434F6 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 534097801A896C0A000434F6 /* Game.cpp */; };
+		534097B01A896C0A000434F6 /* KeyboardInput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 534097841A896C0A000434F6 /* KeyboardInput.cpp */; };
+		534097B21A896C0A000434F6 /* res.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 534097881A896C0A000434F6 /* res.cpp */; };
+		534097C81A896C19000434F6 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 534097C51A896C19000434F6 /* images */; };
+		534097C91A896C19000434F6 /* tmx in Resources */ = {isa = PBXBuildFile; fileRef = 534097C61A896C19000434F6 /* tmx */; };
+		534097CA1A896C19000434F6 /* xmls in Resources */ = {isa = PBXBuildFile; fileRef = 534097C71A896C19000434F6 /* xmls */; };
+		5359D58B1A96BB3B00AE6365 /* liboxygine-sound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5359D5871A96BAE000AE6365 /* liboxygine-sound.a */; };
+		5359D58D1A96BB4900AE6365 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5359D58C1A96BB4900AE6365 /* OpenAL.framework */; };
+		5359D5961A96C4CC00AE6365 /* sounds in Resources */ = {isa = PBXBuildFile; fileRef = 5359D5951A96C4CC00AE6365 /* sounds */; };
+		5359D5991A96C6E600AE6365 /* Gauntmore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5359D5971A96C6E600AE6365 /* Gauntmore.cpp */; };
+		5359D5C71A9807AC00AE6365 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 5359D5C61A9807AC00AE6365 /* fonts */; };
+		53916D991AA36EC900B9164A /* PauseMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53916D971AA36EC900B9164A /* PauseMenu.cpp */; };
+		53945E6B1AA78AA700DF4A7B /* DeathMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53945E691AA78AA700DF4A7B /* DeathMenu.cpp */; };
+		539584391A999D000080A994 /* CollisionDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 539584371A999D000080A994 /* CollisionDetector.cpp */; };
+		5395845B1A99A42D0080A994 /* Chest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5395843A1A99A42D0080A994 /* Chest.cpp */; };
+		5395845C1A99A42D0080A994 /* Creature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5395843C1A99A42D0080A994 /* Creature.cpp */; };
+		5395845D1A99A42D0080A994 /* Gold.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5395843E1A99A42D0080A994 /* Gold.cpp */; };
+		5395845E1A99A42D0080A994 /* GoldCount.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 539584401A99A42D0080A994 /* GoldCount.cpp */; };
+		539584601A99A42D0080A994 /* HealthBar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 539584441A99A42D0080A994 /* HealthBar.cpp */; };
+		539584611A99A42D0080A994 /* Map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 539584461A99A42D0080A994 /* Map.cpp */; };
+		539584621A99A42D0080A994 /* MazeGen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 539584481A99A42D0080A994 /* MazeGen.cpp */; };
+		539584651A99A42D0080A994 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5395844E1A99A42D0080A994 /* Player.cpp */; };
+		539584661A99A42D0080A994 /* Potion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 539584501A99A42D0080A994 /* Potion.cpp */; };
+		539584671A99A42D0080A994 /* Room.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 539584521A99A42D0080A994 /* Room.cpp */; };
+		539584691A99A42D0080A994 /* Thing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 539584561A99A42D0080A994 /* Thing.cpp */; };
+		5395846B1A99A42D0080A994 /* Unit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 539584591A99A42D0080A994 /* Unit.cpp */; };
+		53B438531AAD5A690033E270 /* Menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53B438511AAD5A690033E270 /* Menu.cpp */; };
+		53B46C731A9E44EC00915203 /* NodeMinHeap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53B46C6D1A9E44EC00915203 /* NodeMinHeap.cpp */; };
+		53B46C741A9E44EC00915203 /* PathFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53B46C6F1A9E44EC00915203 /* PathFinder.cpp */; };
+		53B46C7A1A9E476900915203 /* PathNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53B46C791A9E476900915203 /* PathNode.cpp */; };
+		53BCF11B1A8ED99F00BD6288 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53BCF1171A8ED99F00BD6288 /* GameScene.cpp */; };
+		53BCF11C1A8ED99F00BD6288 /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53BCF1191A8ED99F00BD6288 /* Scene.cpp */; };
+		53C5BB971AA554970008BCD5 /* StartMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53C5BB951AA554970008BCD5 /* StartMenu.cpp */; };
+		711CB5E51AA918D3001130C3 /* Ghost.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 711CB5E31AA918D3001130C3 /* Ghost.cpp */; };
+		711CB5EB1AA91B27001130C3 /* Bat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 711CB5E91AA91B27001130C3 /* Bat.cpp */; };
+		7199DCBD1AA91D2E00CA9293 /* Snake.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7199DCBB1AA91D2E00CA9293 /* Snake.cpp */; };
+		7199DCC31AA91DD000CA9293 /* Eyeball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7199DCC11AA91DD000CA9293 /* Eyeball.cpp */; };
+		7199DCC91AA9202C00CA9293 /* Worm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7199DCC71AA9202C00CA9293 /* Worm.cpp */; };
+		9083BCF81AA1098F00D53A4D /* ArmorCount.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9083BCF61AA1098F00D53A4D /* ArmorCount.cpp */; };
+		908A75FD1A9FE03500162B36 /* Armor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 908A75FB1A9FE03500162B36 /* Armor.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04059FE31872026200BA6557 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04A57D761871FFEB0068B1E5 /* oxygine_macosx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 049B52BB1871EDE900EF3C66;
+			remoteInfo = oxygine_macosx;
+		};
+		04059FE81872027200BA6557 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04A57D761871FFEB0068B1E5 /* oxygine_macosx.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 049B52BA1871EDE900EF3C66;
+			remoteInfo = oxygine_macosx;
+		};
+		04A57D851872012D0068B1E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04A57D7E1872012A0068B1E5 /* SDL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BECDF66C0761BA81005FE872;
+			remoteInfo = Framework;
+		};
+		04A57D871872012D0068B1E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04A57D7E1872012A0068B1E5 /* SDL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BECDF6B30761BA81005FE872;
+			remoteInfo = "Static Library";
+		};
+		04A57D891872012D0068B1E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04A57D7E1872012A0068B1E5 /* SDL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DB31407717554B71006C0E22;
+			remoteInfo = "Shared Library";
+		};
+		04A57D8B1872012D0068B1E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04A57D7E1872012A0068B1E5 /* SDL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BECDF6BE0761BA81005FE872;
+			remoteInfo = "Standard DMG";
+		};
+		04A57D8E187201EF0068B1E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04A57D7E1872012A0068B1E5 /* SDL.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BECDF5FE0761BA81005FE872;
+			remoteInfo = Framework;
+		};
+		5359D5861A96BAE000AE6365 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5359D5821A96BAE000AE6365 /* oxygine-sound.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 92AF25E919C637F80026E2CE;
+			remoteInfo = "oxygine-sound";
+		};
+		5359D58E1A96BB5800AE6365 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5359D5821A96BAE000AE6365 /* oxygine-sound.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 92AF25E819C637F80026E2CE;
+			remoteInfo = "oxygine-sound";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04059FEC187202A200BA6557 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		04059FEE187202AC00BA6557 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		04059FF01872031A00BA6557 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjpeg.a; path = "oxygine-framework//oxygine/third_party/macosx/libraries/libjpeg.a"; sourceTree = "<group>"; };
+		04059FF11872031A00BA6557 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng.a; path = "oxygine-framework//oxygine/third_party/macosx/libraries/libpng.a"; sourceTree = "<group>"; };
+		04059FF4187203A600BA6557 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjpeg.a; path = "oxygine-framework//oxygine/third_party/ios/libraries/libjpeg.a"; sourceTree = "<group>"; };
+		04059FF5187203A600BA6557 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng.a; path = "oxygine-framework//oxygine/third_party/ios/libraries/libpng.a"; sourceTree = "<group>"; };
+		049B572E1871FBE900EF3C66 /* gauntmore_macosx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gauntmore_macosx.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		049B57311871FBE900EF3C66 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		049B57341871FBE900EF3C66 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		049B57351871FBE900EF3C66 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		049B57361871FBE900EF3C66 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		049B57391871FBE900EF3C66 /* gauntmore_macosx-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "gauntmore_macosx-Info.plist"; sourceTree = "<group>"; };
+		049B57491871FBE900EF3C66 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = gauntmore/Images.xcassets; sourceTree = "<group>"; };
+		049B57501871FBE900EF3C66 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		04A57D761871FFEB0068B1E5 /* oxygine_macosx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = oxygine_macosx.xcodeproj; path = "oxygine-framework//oxygine/SDL/macosx/oxygine_macosx/oxygine_macosx.xcodeproj"; sourceTree = "<group>"; };
+		04A57D7E1872012A0068B1E5 /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = ".//SDL/Xcode/SDL/SDL.xcodeproj"; sourceTree = "<group>"; };
+		485AA5F11A9FF07300ED2895 /* NodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NodeArray.cpp; path = src/NodeArray.cpp; sourceTree = "<group>"; };
+		485AA5F21A9FF07300ED2895 /* NodeArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NodeArray.h; path = src/NodeArray.h; sourceTree = "<group>"; };
+		530A07ED1AAC0ECC0074D3C7 /* Weapon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Weapon.cpp; path = src/Weapon.cpp; sourceTree = "<group>"; };
+		530A07EE1AAC0ECC0074D3C7 /* Weapon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Weapon.h; path = src/Weapon.h; sourceTree = "<group>"; };
+		530A07EF1AAC0ECC0074D3C7 /* WeaponCount.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WeaponCount.cpp; path = src/WeaponCount.cpp; sourceTree = "<group>"; };
+		530A07F01AAC0ECC0074D3C7 /* WeaponCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeaponCount.h; path = src/WeaponCount.h; sourceTree = "<group>"; };
+		5328787C1A99A6EB00228299 /* base64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = base64.cpp; sourceTree = "<group>"; };
+		5328787D1A99A6EB00228299 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		5328787E1A99A6EB00228299 /* tinyxml2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxml2.cpp; sourceTree = "<group>"; };
+		5328787F1A99A6EB00228299 /* tinyxml2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tinyxml2.h; sourceTree = "<group>"; };
+		532878801A99A6EB00228299 /* Tmx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tmx.h; sourceTree = "<group>"; };
+		532878811A99A6EB00228299 /* TmxEllipse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TmxEllipse.cpp; sourceTree = "<group>"; };
+		532878821A99A6EB00228299 /* TmxEllipse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TmxEllipse.h; sourceTree = "<group>"; };
+		532878831A99A6EB00228299 /* TmxImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TmxImage.cpp; sourceTree = "<group>"; };
+		532878841A99A6EB00228299 /* TmxImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TmxImage.h; sourceTree = "<group>"; };
+		532878851A99A6EB00228299 /* TmxImageLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TmxImageLayer.cpp; sourceTree = "<group>"; };
+		532878861A99A6EB00228299 /* TmxImageLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TmxImageLayer.h; sourceTree = "<group>"; };
+		532878871A99A6EB00228299 /* TmxLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TmxLayer.cpp; sourceTree = "<group>"; };
+		532878881A99A6EB00228299 /* TmxLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TmxLayer.h; sourceTree = "<group>"; };
+		532878891A99A6EB00228299 /* TmxMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TmxMap.cpp; sourceTree = "<group>"; };
+		5328788A1A99A6EB00228299 /* TmxMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TmxMap.h; sourceTree = "<group>"; };
+		5328788B1A99A6EB00228299 /* TmxMapTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TmxMapTile.h; sourceTree = "<group>"; };
+		5328788C1A99A6EB00228299 /* TmxObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TmxObject.cpp; sourceTree = "<group>"; };
+		5328788D1A99A6EB00228299 /* TmxObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TmxObject.h; sourceTree = "<group>"; };
+		5328788E1A99A6EB00228299 /* TmxObjectGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TmxObjectGroup.cpp; sourceTree = "<group>"; };
+		5328788F1A99A6EB00228299 /* TmxObjectGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TmxObjectGroup.h; sourceTree = "<group>"; };
+		532878901A99A6EB00228299 /* TmxPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TmxPoint.h; sourceTree = "<group>"; };
+		532878911A99A6EB00228299 /* TmxPolygon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TmxPolygon.cpp; sourceTree = "<group>"; };
+		532878921A99A6EB00228299 /* TmxPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TmxPolygon.h; sourceTree = "<group>"; };
+		532878931A99A6EB00228299 /* TmxPolyline.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TmxPolyline.cpp; sourceTree = "<group>"; };
+		532878941A99A6EB00228299 /* TmxPolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TmxPolyline.h; sourceTree = "<group>"; };
+		532878951A99A6EB00228299 /* TmxPropertySet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TmxPropertySet.cpp; sourceTree = "<group>"; };
+		532878961A99A6EB00228299 /* TmxPropertySet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TmxPropertySet.h; sourceTree = "<group>"; };
+		532878971A99A6EB00228299 /* TmxTile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TmxTile.cpp; sourceTree = "<group>"; };
+		532878981A99A6EB00228299 /* TmxTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TmxTile.h; sourceTree = "<group>"; };
+		532878991A99A6EB00228299 /* TmxTileset.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TmxTileset.cpp; sourceTree = "<group>"; };
+		5328789A1A99A6EB00228299 /* TmxTileset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TmxTileset.h; sourceTree = "<group>"; };
+		5328789B1A99A6EB00228299 /* TmxUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TmxUtil.cpp; sourceTree = "<group>"; };
+		5328789C1A99A6EB00228299 /* TmxUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TmxUtil.h; sourceTree = "<group>"; };
+		532878B81A9A6AA700228299 /* Slime.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Slime.cpp; path = src/Slime.cpp; sourceTree = "<group>"; };
+		532878B91A9A6AA700228299 /* Slime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Slime.h; path = src/Slime.h; sourceTree = "<group>"; };
+		5340977F1A896C0A000434F6 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = "<group>"; };
+		534097801A896C0A000434F6 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Game.cpp; path = src/Game.cpp; sourceTree = "<group>"; };
+		534097811A896C0A000434F6 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = src/Game.h; sourceTree = "<group>"; };
+		534097841A896C0A000434F6 /* KeyboardInput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KeyboardInput.cpp; path = src/KeyboardInput.cpp; sourceTree = "<group>"; };
+		534097851A896C0A000434F6 /* KeyboardInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyboardInput.h; path = src/KeyboardInput.h; sourceTree = "<group>"; };
+		534097881A896C0A000434F6 /* res.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = res.cpp; path = src/res.cpp; sourceTree = "<group>"; };
+		534097891A896C0A000434F6 /* res.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = res.h; path = src/res.h; sourceTree = "<group>"; };
+		534097C51A896C19000434F6 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = data/images; sourceTree = "<group>"; };
+		534097C61A896C19000434F6 /* tmx */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tmx; path = data/tmx; sourceTree = "<group>"; };
+		534097C71A896C19000434F6 /* xmls */ = {isa = PBXFileReference; lastKnownFileType = folder; name = xmls; path = data/xmls; sourceTree = "<group>"; };
+		5359D5821A96BAE000AE6365 /* oxygine-sound.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "oxygine-sound.xcodeproj"; path = "oxygine-sound/proj.macosx/oxygine-sound.xcodeproj"; sourceTree = "<group>"; };
+		5359D58C1A96BB4900AE6365 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		5359D5951A96C4CC00AE6365 /* sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sounds; path = data/sounds; sourceTree = "<group>"; };
+		5359D5971A96C6E600AE6365 /* Gauntmore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Gauntmore.cpp; path = src/Gauntmore.cpp; sourceTree = "<group>"; };
+		5359D5981A96C6E600AE6365 /* Gauntmore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gauntmore.h; path = src/Gauntmore.h; sourceTree = "<group>"; };
+		5359D5C61A9807AC00AE6365 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = data/fonts; sourceTree = "<group>"; };
+		53916D971AA36EC900B9164A /* PauseMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PauseMenu.cpp; path = src/PauseMenu.cpp; sourceTree = "<group>"; };
+		53916D981AA36EC900B9164A /* PauseMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PauseMenu.h; path = src/PauseMenu.h; sourceTree = "<group>"; };
+		53945E691AA78AA700DF4A7B /* DeathMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DeathMenu.cpp; path = src/DeathMenu.cpp; sourceTree = "<group>"; };
+		53945E6A1AA78AA700DF4A7B /* DeathMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeathMenu.h; path = src/DeathMenu.h; sourceTree = "<group>"; };
+		539584371A999D000080A994 /* CollisionDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CollisionDetector.cpp; path = src/CollisionDetector.cpp; sourceTree = "<group>"; };
+		539584381A999D000080A994 /* CollisionDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollisionDetector.h; path = src/CollisionDetector.h; sourceTree = "<group>"; };
+		5395843A1A99A42D0080A994 /* Chest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Chest.cpp; path = src/Chest.cpp; sourceTree = "<group>"; };
+		5395843B1A99A42D0080A994 /* Chest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Chest.h; path = src/Chest.h; sourceTree = "<group>"; };
+		5395843C1A99A42D0080A994 /* Creature.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Creature.cpp; path = src/Creature.cpp; sourceTree = "<group>"; };
+		5395843D1A99A42D0080A994 /* Creature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Creature.h; path = src/Creature.h; sourceTree = "<group>"; };
+		5395843E1A99A42D0080A994 /* Gold.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Gold.cpp; path = src/Gold.cpp; sourceTree = "<group>"; };
+		5395843F1A99A42D0080A994 /* Gold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gold.h; path = src/Gold.h; sourceTree = "<group>"; };
+		539584401A99A42D0080A994 /* GoldCount.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GoldCount.cpp; path = src/GoldCount.cpp; sourceTree = "<group>"; };
+		539584411A99A42D0080A994 /* GoldCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoldCount.h; path = src/GoldCount.h; sourceTree = "<group>"; };
+		539584441A99A42D0080A994 /* HealthBar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HealthBar.cpp; path = src/HealthBar.cpp; sourceTree = "<group>"; };
+		539584451A99A42D0080A994 /* HealthBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HealthBar.h; path = src/HealthBar.h; sourceTree = "<group>"; };
+		539584461A99A42D0080A994 /* Map.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Map.cpp; path = src/Map.cpp; sourceTree = "<group>"; };
+		539584471A99A42D0080A994 /* Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Map.h; path = src/Map.h; sourceTree = "<group>"; };
+		539584481A99A42D0080A994 /* MazeGen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MazeGen.cpp; path = src/MazeGen.cpp; sourceTree = "<group>"; };
+		539584491A99A42D0080A994 /* MazeGen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MazeGen.h; path = src/MazeGen.h; sourceTree = "<group>"; };
+		5395844E1A99A42D0080A994 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Player.cpp; path = src/Player.cpp; sourceTree = "<group>"; };
+		5395844F1A99A42D0080A994 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = src/Player.h; sourceTree = "<group>"; };
+		539584501A99A42D0080A994 /* Potion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Potion.cpp; path = src/Potion.cpp; sourceTree = "<group>"; };
+		539584511A99A42D0080A994 /* Potion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Potion.h; path = src/Potion.h; sourceTree = "<group>"; };
+		539584521A99A42D0080A994 /* Room.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Room.cpp; path = src/Room.cpp; sourceTree = "<group>"; };
+		539584531A99A42D0080A994 /* Room.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Room.h; path = src/Room.h; sourceTree = "<group>"; };
+		539584561A99A42D0080A994 /* Thing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Thing.cpp; path = src/Thing.cpp; sourceTree = "<group>"; };
+		539584571A99A42D0080A994 /* Thing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Thing.h; path = src/Thing.h; sourceTree = "<group>"; };
+		539584591A99A42D0080A994 /* Unit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Unit.cpp; path = src/Unit.cpp; sourceTree = "<group>"; };
+		5395845A1A99A42D0080A994 /* Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Unit.h; path = src/Unit.h; sourceTree = "<group>"; };
+		53B438511AAD5A690033E270 /* Menu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Menu.cpp; path = src/Menu.cpp; sourceTree = "<group>"; };
+		53B438521AAD5A690033E270 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Menu.h; path = src/Menu.h; sourceTree = "<group>"; };
+		53B46C6D1A9E44EC00915203 /* NodeMinHeap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NodeMinHeap.cpp; path = src/NodeMinHeap.cpp; sourceTree = "<group>"; };
+		53B46C6E1A9E44EC00915203 /* NodeMinHeap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NodeMinHeap.h; path = src/NodeMinHeap.h; sourceTree = "<group>"; };
+		53B46C6F1A9E44EC00915203 /* PathFinder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PathFinder.cpp; path = src/PathFinder.cpp; sourceTree = "<group>"; };
+		53B46C701A9E44EC00915203 /* PathFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PathFinder.h; path = src/PathFinder.h; sourceTree = "<group>"; };
+		53B46C711A9E44EC00915203 /* PathNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PathNode.h; path = src/PathNode.h; sourceTree = "<group>"; };
+		53B46C791A9E476900915203 /* PathNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PathNode.cpp; path = src/PathNode.cpp; sourceTree = "<group>"; };
+		53BCF1171A8ED99F00BD6288 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameScene.cpp; path = src/GameScene.cpp; sourceTree = "<group>"; };
+		53BCF1181A8ED99F00BD6288 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = src/GameScene.h; sourceTree = "<group>"; };
+		53BCF1191A8ED99F00BD6288 /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Scene.cpp; path = src/Scene.cpp; sourceTree = "<group>"; };
+		53BCF11A1A8ED99F00BD6288 /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Scene.h; path = src/Scene.h; sourceTree = "<group>"; };
+		53C5BB951AA554970008BCD5 /* StartMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StartMenu.cpp; path = src/StartMenu.cpp; sourceTree = "<group>"; };
+		53C5BB961AA554970008BCD5 /* StartMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StartMenu.h; path = src/StartMenu.h; sourceTree = "<group>"; };
+		711CB5E31AA918D3001130C3 /* Ghost.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Ghost.cpp; path = src/Ghost.cpp; sourceTree = "<group>"; };
+		711CB5E41AA918D3001130C3 /* Ghost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ghost.h; path = src/Ghost.h; sourceTree = "<group>"; };
+		711CB5E91AA91B27001130C3 /* Bat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Bat.cpp; path = src/Bat.cpp; sourceTree = "<group>"; };
+		711CB5EA1AA91B27001130C3 /* Bat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bat.h; path = src/Bat.h; sourceTree = "<group>"; };
+		7199DCBB1AA91D2E00CA9293 /* Snake.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Snake.cpp; path = src/Snake.cpp; sourceTree = "<group>"; };
+		7199DCBC1AA91D2E00CA9293 /* Snake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Snake.h; path = src/Snake.h; sourceTree = "<group>"; };
+		7199DCC11AA91DD000CA9293 /* Eyeball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Eyeball.cpp; path = src/Eyeball.cpp; sourceTree = "<group>"; };
+		7199DCC21AA91DD000CA9293 /* Eyeball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Eyeball.h; path = src/Eyeball.h; sourceTree = "<group>"; };
+		7199DCC71AA9202C00CA9293 /* Worm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Worm.cpp; path = src/Worm.cpp; sourceTree = "<group>"; };
+		7199DCC81AA9202C00CA9293 /* Worm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Worm.h; path = src/Worm.h; sourceTree = "<group>"; };
+		9083BCF61AA1098F00D53A4D /* ArmorCount.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ArmorCount.cpp; path = src/ArmorCount.cpp; sourceTree = "<group>"; };
+		9083BCF71AA1098F00D53A4D /* ArmorCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArmorCount.h; path = src/ArmorCount.h; sourceTree = "<group>"; };
+		908A75FB1A9FE03500162B36 /* Armor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Armor.cpp; path = src/Armor.cpp; sourceTree = "<group>"; };
+		908A75FC1A9FE03500162B36 /* Armor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Armor.h; path = src/Armor.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		049B572B1871FBE900EF3C66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5359D58D1A96BB4900AE6365 /* OpenAL.framework in Frameworks */,
+				5359D58B1A96BB3B00AE6365 /* liboxygine-sound.a in Frameworks */,
+				0405A00018720D2200BA6557 /* libjpeg.a in Frameworks */,
+				0405A00118720D2200BA6557 /* libpng.a in Frameworks */,
+				04059FEF187202AC00BA6557 /* OpenGL.framework in Frameworks */,
+				04059FED187202A200BA6557 /* libz.dylib in Frameworks */,
+				04059FEB1872027B00BA6557 /* liboxygine_macosx.a in Frameworks */,
+				04059FEA1872027500BA6557 /* SDL2.framework in Frameworks */,
+				049B57321871FBE900EF3C66 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04059FE01872026200BA6557 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04059FE41872026200BA6557 /* liboxygine_macosx.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		049B57251871FBE900EF3C66 = {
+			isa = PBXGroup;
+			children = (
+				049B57491871FBE900EF3C66 /* Images.xcassets */,
+				049B57381871FBE900EF3C66 /* Supporting Files */,
+				04A57D391871FF8B0068B1E5 /* src */,
+				5359D5821A96BAE000AE6365 /* oxygine-sound.xcodeproj */,
+				04A57D7E1872012A0068B1E5 /* SDL.xcodeproj */,
+				04A57D761871FFEB0068B1E5 /* oxygine_macosx.xcodeproj */,
+				049B57301871FBE900EF3C66 /* Frameworks */,
+				049B572F1871FBE900EF3C66 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		049B572F1871FBE900EF3C66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				049B572E1871FBE900EF3C66 /* gauntmore_macosx.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		049B57301871FBE900EF3C66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5359D58C1A96BB4900AE6365 /* OpenAL.framework */,
+				04059FF4187203A600BA6557 /* libjpeg.a */,
+				04059FF5187203A600BA6557 /* libpng.a */,
+				04059FF01872031A00BA6557 /* libjpeg.a */,
+				04059FF11872031A00BA6557 /* libpng.a */,
+				04059FEE187202AC00BA6557 /* OpenGL.framework */,
+				04059FEC187202A200BA6557 /* libz.dylib */,
+				049B57311871FBE900EF3C66 /* Cocoa.framework */,
+				049B57501871FBE900EF3C66 /* XCTest.framework */,
+				049B57331871FBE900EF3C66 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		049B57331871FBE900EF3C66 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				049B57341871FBE900EF3C66 /* AppKit.framework */,
+				049B57351871FBE900EF3C66 /* CoreData.framework */,
+				049B57361871FBE900EF3C66 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		049B57381871FBE900EF3C66 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5359D5C61A9807AC00AE6365 /* fonts */,
+				5359D5951A96C4CC00AE6365 /* sounds */,
+				534097C51A896C19000434F6 /* images */,
+				534097C61A896C19000434F6 /* tmx */,
+				534097C71A896C19000434F6 /* xmls */,
+				049B57391871FBE900EF3C66 /* gauntmore_macosx-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04A57D391871FF8B0068B1E5 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				539584371A999D000080A994 /* CollisionDetector.cpp */,
+				539584381A999D000080A994 /* CollisionDetector.h */,
+				534097801A896C0A000434F6 /* Game.cpp */,
+				534097811A896C0A000434F6 /* Game.h */,
+				53BCF1171A8ED99F00BD6288 /* GameScene.cpp */,
+				53BCF1181A8ED99F00BD6288 /* GameScene.h */,
+				5359D5971A96C6E600AE6365 /* Gauntmore.cpp */,
+				5359D5981A96C6E600AE6365 /* Gauntmore.h */,
+				532878BC1A9BA07900228299 /* hud */,
+				534097841A896C0A000434F6 /* KeyboardInput.cpp */,
+				534097851A896C0A000434F6 /* KeyboardInput.h */,
+				5340977F1A896C0A000434F6 /* main.cpp */,
+				532878BD1A9BA09000228299 /* map */,
+				53945E6F1AA78B2500DF4A7B /* menus */,
+				53B46C781A9E44F500915203 /* pathfinding */,
+				534097881A896C0A000434F6 /* res.cpp */,
+				534097891A896C0A000434F6 /* res.h */,
+				53BCF1191A8ED99F00BD6288 /* Scene.cpp */,
+				53BCF11A1A8ED99F00BD6288 /* Scene.h */,
+				5328787B1A99A6EB00228299 /* tmx */,
+				532878BE1A9BA15500228299 /* units */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		04A57D7F1872012A0068B1E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04A57D861872012D0068B1E5 /* SDL2.framework */,
+				04A57D881872012D0068B1E5 /* libSDL2.a */,
+				04A57D8A1872012D0068B1E5 /* libSDL2.dylib */,
+				04A57D8C1872012D0068B1E5 /* Standard DMG */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5328787B1A99A6EB00228299 /* tmx */ = {
+			isa = PBXGroup;
+			children = (
+				5328787C1A99A6EB00228299 /* base64.cpp */,
+				5328787D1A99A6EB00228299 /* base64.h */,
+				5328787E1A99A6EB00228299 /* tinyxml2.cpp */,
+				5328787F1A99A6EB00228299 /* tinyxml2.h */,
+				532878801A99A6EB00228299 /* Tmx.h */,
+				532878811A99A6EB00228299 /* TmxEllipse.cpp */,
+				532878821A99A6EB00228299 /* TmxEllipse.h */,
+				532878831A99A6EB00228299 /* TmxImage.cpp */,
+				532878841A99A6EB00228299 /* TmxImage.h */,
+				532878851A99A6EB00228299 /* TmxImageLayer.cpp */,
+				532878861A99A6EB00228299 /* TmxImageLayer.h */,
+				532878871A99A6EB00228299 /* TmxLayer.cpp */,
+				532878881A99A6EB00228299 /* TmxLayer.h */,
+				532878891A99A6EB00228299 /* TmxMap.cpp */,
+				5328788A1A99A6EB00228299 /* TmxMap.h */,
+				5328788B1A99A6EB00228299 /* TmxMapTile.h */,
+				5328788C1A99A6EB00228299 /* TmxObject.cpp */,
+				5328788D1A99A6EB00228299 /* TmxObject.h */,
+				5328788E1A99A6EB00228299 /* TmxObjectGroup.cpp */,
+				5328788F1A99A6EB00228299 /* TmxObjectGroup.h */,
+				532878901A99A6EB00228299 /* TmxPoint.h */,
+				532878911A99A6EB00228299 /* TmxPolygon.cpp */,
+				532878921A99A6EB00228299 /* TmxPolygon.h */,
+				532878931A99A6EB00228299 /* TmxPolyline.cpp */,
+				532878941A99A6EB00228299 /* TmxPolyline.h */,
+				532878951A99A6EB00228299 /* TmxPropertySet.cpp */,
+				532878961A99A6EB00228299 /* TmxPropertySet.h */,
+				532878971A99A6EB00228299 /* TmxTile.cpp */,
+				532878981A99A6EB00228299 /* TmxTile.h */,
+				532878991A99A6EB00228299 /* TmxTileset.cpp */,
+				5328789A1A99A6EB00228299 /* TmxTileset.h */,
+				5328789B1A99A6EB00228299 /* TmxUtil.cpp */,
+				5328789C1A99A6EB00228299 /* TmxUtil.h */,
+			);
+			name = tmx;
+			path = src/tmx;
+			sourceTree = "<group>";
+		};
+		532878BC1A9BA07900228299 /* hud */ = {
+			isa = PBXGroup;
+			children = (
+				9083BCF61AA1098F00D53A4D /* ArmorCount.cpp */,
+				9083BCF71AA1098F00D53A4D /* ArmorCount.h */,
+				539584401A99A42D0080A994 /* GoldCount.cpp */,
+				539584411A99A42D0080A994 /* GoldCount.h */,
+				539584441A99A42D0080A994 /* HealthBar.cpp */,
+				539584451A99A42D0080A994 /* HealthBar.h */,
+				530A07EF1AAC0ECC0074D3C7 /* WeaponCount.cpp */,
+				530A07F01AAC0ECC0074D3C7 /* WeaponCount.h */,
+			);
+			name = hud;
+			sourceTree = "<group>";
+		};
+		532878BD1A9BA09000228299 /* map */ = {
+			isa = PBXGroup;
+			children = (
+				539584461A99A42D0080A994 /* Map.cpp */,
+				539584471A99A42D0080A994 /* Map.h */,
+				539584481A99A42D0080A994 /* MazeGen.cpp */,
+				539584491A99A42D0080A994 /* MazeGen.h */,
+				539584521A99A42D0080A994 /* Room.cpp */,
+				539584531A99A42D0080A994 /* Room.h */,
+			);
+			name = map;
+			sourceTree = "<group>";
+		};
+		532878BE1A9BA15500228299 /* units */ = {
+			isa = PBXGroup;
+			children = (
+				908A75FB1A9FE03500162B36 /* Armor.cpp */,
+				908A75FC1A9FE03500162B36 /* Armor.h */,
+				711CB5E91AA91B27001130C3 /* Bat.cpp */,
+				711CB5EA1AA91B27001130C3 /* Bat.h */,
+				5395843A1A99A42D0080A994 /* Chest.cpp */,
+				5395843B1A99A42D0080A994 /* Chest.h */,
+				5395843C1A99A42D0080A994 /* Creature.cpp */,
+				5395843D1A99A42D0080A994 /* Creature.h */,
+				7199DCC11AA91DD000CA9293 /* Eyeball.cpp */,
+				7199DCC21AA91DD000CA9293 /* Eyeball.h */,
+				711CB5E31AA918D3001130C3 /* Ghost.cpp */,
+				711CB5E41AA918D3001130C3 /* Ghost.h */,
+				5395843E1A99A42D0080A994 /* Gold.cpp */,
+				5395843F1A99A42D0080A994 /* Gold.h */,
+				5395844E1A99A42D0080A994 /* Player.cpp */,
+				5395844F1A99A42D0080A994 /* Player.h */,
+				539584501A99A42D0080A994 /* Potion.cpp */,
+				539584511A99A42D0080A994 /* Potion.h */,
+				532878B81A9A6AA700228299 /* Slime.cpp */,
+				532878B91A9A6AA700228299 /* Slime.h */,
+				7199DCBB1AA91D2E00CA9293 /* Snake.cpp */,
+				7199DCBC1AA91D2E00CA9293 /* Snake.h */,
+				539584561A99A42D0080A994 /* Thing.cpp */,
+				539584571A99A42D0080A994 /* Thing.h */,
+				539584591A99A42D0080A994 /* Unit.cpp */,
+				5395845A1A99A42D0080A994 /* Unit.h */,
+				530A07ED1AAC0ECC0074D3C7 /* Weapon.cpp */,
+				530A07EE1AAC0ECC0074D3C7 /* Weapon.h */,
+				7199DCC71AA9202C00CA9293 /* Worm.cpp */,
+				7199DCC81AA9202C00CA9293 /* Worm.h */,
+			);
+			name = units;
+			sourceTree = "<group>";
+		};
+		5359D5831A96BAE000AE6365 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5359D5871A96BAE000AE6365 /* liboxygine-sound.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53945E6F1AA78B2500DF4A7B /* menus */ = {
+			isa = PBXGroup;
+			children = (
+				53945E691AA78AA700DF4A7B /* DeathMenu.cpp */,
+				53945E6A1AA78AA700DF4A7B /* DeathMenu.h */,
+				53916D971AA36EC900B9164A /* PauseMenu.cpp */,
+				53916D981AA36EC900B9164A /* PauseMenu.h */,
+				53C5BB951AA554970008BCD5 /* StartMenu.cpp */,
+				53C5BB961AA554970008BCD5 /* StartMenu.h */,
+				53B438511AAD5A690033E270 /* Menu.cpp */,
+				53B438521AAD5A690033E270 /* Menu.h */,
+			);
+			name = menus;
+			sourceTree = "<group>";
+		};
+		53B46C781A9E44F500915203 /* pathfinding */ = {
+			isa = PBXGroup;
+			children = (
+				53B46C6D1A9E44EC00915203 /* NodeMinHeap.cpp */,
+				53B46C6E1A9E44EC00915203 /* NodeMinHeap.h */,
+				53B46C6F1A9E44EC00915203 /* PathFinder.cpp */,
+				53B46C701A9E44EC00915203 /* PathFinder.h */,
+				53B46C791A9E476900915203 /* PathNode.cpp */,
+				53B46C711A9E44EC00915203 /* PathNode.h */,
+				485AA5F11A9FF07300ED2895 /* NodeArray.cpp */,
+				485AA5F21A9FF07300ED2895 /* NodeArray.h */,
+			);
+			name = pathfinding;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		049B572D1871FBE900EF3C66 /* gauntmore_macosx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 049B575F1871FBE900EF3C66 /* Build configuration list for PBXNativeTarget "gauntmore_macosx" */;
+			buildPhases = (
+				049B572A1871FBE900EF3C66 /* Sources */,
+				049B572B1871FBE900EF3C66 /* Frameworks */,
+				049B572C1871FBE900EF3C66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04059FE91872027200BA6557 /* PBXTargetDependency */,
+				5359D58F1A96BB5800AE6365 /* PBXTargetDependency */,
+				04A57D8F187201EF0068B1E5 /* PBXTargetDependency */,
+			);
+			name = gauntmore_macosx;
+			productName = gauntmore;
+			productReference = 049B572E1871FBE900EF3C66 /* gauntmore_macosx.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		049B57261871FBE900EF3C66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = oxygine;
+			};
+			buildConfigurationList = 049B57291871FBE900EF3C66 /* Build configuration list for PBXProject "gauntmore_macosx" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 049B57251871FBE900EF3C66;
+			productRefGroup = 049B572F1871FBE900EF3C66 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5359D5831A96BAE000AE6365 /* Products */;
+					ProjectRef = 5359D5821A96BAE000AE6365 /* oxygine-sound.xcodeproj */;
+				},
+				{
+					ProductGroup = 04059FE01872026200BA6557 /* Products */;
+					ProjectRef = 04A57D761871FFEB0068B1E5 /* oxygine_macosx.xcodeproj */;
+				},
+				{
+					ProductGroup = 04A57D7F1872012A0068B1E5 /* Products */;
+					ProjectRef = 04A57D7E1872012A0068B1E5 /* SDL.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				049B572D1871FBE900EF3C66 /* gauntmore_macosx */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		04059FE41872026200BA6557 /* liboxygine_macosx.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liboxygine_macosx.a;
+			remoteRef = 04059FE31872026200BA6557 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		04A57D861872012D0068B1E5 /* SDL2.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SDL2.framework;
+			remoteRef = 04A57D851872012D0068B1E5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		04A57D881872012D0068B1E5 /* libSDL2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDL2.a;
+			remoteRef = 04A57D871872012D0068B1E5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		04A57D8A1872012D0068B1E5 /* libSDL2.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libSDL2.dylib;
+			remoteRef = 04A57D891872012D0068B1E5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		04A57D8C1872012D0068B1E5 /* Standard DMG */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "Standard DMG";
+			remoteRef = 04A57D8B1872012D0068B1E5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5359D5871A96BAE000AE6365 /* liboxygine-sound.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "liboxygine-sound.a";
+			remoteRef = 5359D5861A96BAE000AE6365 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		049B572C1871FBE900EF3C66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				534097CA1A896C19000434F6 /* xmls in Resources */,
+				5359D5961A96C4CC00AE6365 /* sounds in Resources */,
+				534097C91A896C19000434F6 /* tmx in Resources */,
+				5359D5C71A9807AC00AE6365 /* fonts in Resources */,
+				534097C81A896C19000434F6 /* images in Resources */,
+				049B574A1871FBE900EF3C66 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		049B572A1871FBE900EF3C66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53B438531AAD5A690033E270 /* Menu.cpp in Sources */,
+				5395845B1A99A42D0080A994 /* Chest.cpp in Sources */,
+				532878A51A99A6EB00228299 /* TmxObjectGroup.cpp in Sources */,
+				7199DCC91AA9202C00CA9293 /* Worm.cpp in Sources */,
+				5328789D1A99A6EB00228299 /* base64.cpp in Sources */,
+				53B46C7A1A9E476900915203 /* PathNode.cpp in Sources */,
+				530A07F11AAC0ECC0074D3C7 /* Weapon.cpp in Sources */,
+				53916D991AA36EC900B9164A /* PauseMenu.cpp in Sources */,
+				534097AD1A896C0A000434F6 /* main.cpp in Sources */,
+				53B46C741A9E44EC00915203 /* PathFinder.cpp in Sources */,
+				532878A31A99A6EB00228299 /* TmxMap.cpp in Sources */,
+				711CB5E51AA918D3001130C3 /* Ghost.cpp in Sources */,
+				539584611A99A42D0080A994 /* Map.cpp in Sources */,
+				5328789F1A99A6EB00228299 /* TmxEllipse.cpp in Sources */,
+				532878AA1A99A6EB00228299 /* TmxTileset.cpp in Sources */,
+				539584661A99A42D0080A994 /* Potion.cpp in Sources */,
+				7199DCBD1AA91D2E00CA9293 /* Snake.cpp in Sources */,
+				532878BA1A9A6AA700228299 /* Slime.cpp in Sources */,
+				532878A21A99A6EB00228299 /* TmxLayer.cpp in Sources */,
+				530A07F21AAC0ECC0074D3C7 /* WeaponCount.cpp in Sources */,
+				711CB5EB1AA91B27001130C3 /* Bat.cpp in Sources */,
+				534097B21A896C0A000434F6 /* res.cpp in Sources */,
+				532878AB1A99A6EB00228299 /* TmxUtil.cpp in Sources */,
+				539584391A999D000080A994 /* CollisionDetector.cpp in Sources */,
+				532878A41A99A6EB00228299 /* TmxObject.cpp in Sources */,
+				539584671A99A42D0080A994 /* Room.cpp in Sources */,
+				539584621A99A42D0080A994 /* MazeGen.cpp in Sources */,
+				532878A61A99A6EB00228299 /* TmxPolygon.cpp in Sources */,
+				539584651A99A42D0080A994 /* Player.cpp in Sources */,
+				5395845C1A99A42D0080A994 /* Creature.cpp in Sources */,
+				908A75FD1A9FE03500162B36 /* Armor.cpp in Sources */,
+				5395845E1A99A42D0080A994 /* GoldCount.cpp in Sources */,
+				532878A71A99A6EB00228299 /* TmxPolyline.cpp in Sources */,
+				485AA5F31A9FF07300ED2895 /* NodeArray.cpp in Sources */,
+				532878A01A99A6EB00228299 /* TmxImage.cpp in Sources */,
+				534097B01A896C0A000434F6 /* KeyboardInput.cpp in Sources */,
+				532878A81A99A6EB00228299 /* TmxPropertySet.cpp in Sources */,
+				539584691A99A42D0080A994 /* Thing.cpp in Sources */,
+				53BCF11B1A8ED99F00BD6288 /* GameScene.cpp in Sources */,
+				532878A11A99A6EB00228299 /* TmxImageLayer.cpp in Sources */,
+				5395846B1A99A42D0080A994 /* Unit.cpp in Sources */,
+				53B46C731A9E44EC00915203 /* NodeMinHeap.cpp in Sources */,
+				9083BCF81AA1098F00D53A4D /* ArmorCount.cpp in Sources */,
+				5359D5991A96C6E600AE6365 /* Gauntmore.cpp in Sources */,
+				5395845D1A99A42D0080A994 /* Gold.cpp in Sources */,
+				5328789E1A99A6EB00228299 /* tinyxml2.cpp in Sources */,
+				53C5BB971AA554970008BCD5 /* StartMenu.cpp in Sources */,
+				53945E6B1AA78AA700DF4A7B /* DeathMenu.cpp in Sources */,
+				53BCF11C1A8ED99F00BD6288 /* Scene.cpp in Sources */,
+				532878A91A99A6EB00228299 /* TmxTile.cpp in Sources */,
+				539584601A99A42D0080A994 /* HealthBar.cpp in Sources */,
+				7199DCC31AA91DD000CA9293 /* Eyeball.cpp in Sources */,
+				534097AE1A896C0A000434F6 /* Game.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04059FE91872027200BA6557 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = oxygine_macosx;
+			targetProxy = 04059FE81872027200BA6557 /* PBXContainerItemProxy */;
+		};
+		04A57D8F187201EF0068B1E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Framework;
+			targetProxy = 04A57D8E187201EF0068B1E5 /* PBXContainerItemProxy */;
+		};
+		5359D58F1A96BB5800AE6365 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "oxygine-sound";
+			targetProxy = 5359D58E1A96BB5800AE6365 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		049B575D1871FBE900EF3C66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "oxygine-framework//oxygine/src .//SDL/include";
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		049B575E1871FBE900EF3C66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "oxygine-framework//oxygine/src .//SDL/include";
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+		049B57601871FBE900EF3C66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gauntmore/gauntmore_macosx-Prefix.pch";
+				INFOPLIST_FILE = "gauntmore_macosx-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"oxygine-framework//oxygine/third_party/macosx/libraries",
+					"oxygine-framework//oxygine/third_party/ios/libraries",
+				);
+				PRODUCT_NAME = gauntmore_macosx;
+				USER_HEADER_SEARCH_PATHS = "oxygine-framework//oxygine/src .//SDL/include ./oxygine-sound/src";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		049B57611871FBE900EF3C66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gauntmore/gauntmore_macosx-Prefix.pch";
+				INFOPLIST_FILE = "gauntmore_macosx-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"oxygine-framework//oxygine/third_party/macosx/libraries",
+					"oxygine-framework//oxygine/third_party/ios/libraries",
+				);
+				PRODUCT_NAME = gauntmore_macosx;
+				USER_HEADER_SEARCH_PATHS = "oxygine-framework//oxygine/src .//SDL/include ./oxygine-sound/src";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		049B57291871FBE900EF3C66 /* Build configuration list for PBXProject "gauntmore_macosx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049B575D1871FBE900EF3C66 /* Debug */,
+				049B575E1871FBE900EF3C66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		049B575F1871FBE900EF3C66 /* Build configuration list for PBXNativeTarget "gauntmore_macosx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049B57601871FBE900EF3C66 /* Debug */,
+				049B57611871FBE900EF3C66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 049B57261871FBE900EF3C66 /* Project object */;
+}
